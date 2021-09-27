@@ -7,6 +7,7 @@ check-swagger:
 swagger: check-swagger
 	GO111MODULE=on go mod vendor  && GO111MODULE=off swagger generate spec -o ./swagger.yaml --scan-models
 
+# To View fancy webpage BATCHEST WOW UI UX
 serve-swagger: check-swagger
 	swagger serve -F=swagger swagger.yaml
 

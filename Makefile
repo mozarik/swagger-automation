@@ -1,3 +1,6 @@
+
+
+# Installing using docker pull https://goswagger.io/install.html
 check-swagger:
 	which swagger || (GO111MODULE=off go get -u github.com/go-swagger/go-swagger/cmd/swagger)
 
@@ -6,3 +9,8 @@ swagger: check-swagger
 
 serve-swagger: check-swagger
 	swagger serve -F=swagger swagger.yaml
+
+.PHONY: install-swagger 
+install-swagger:
+	./install-goswagger.sh
+

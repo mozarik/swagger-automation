@@ -4,7 +4,7 @@ run this to install `go-swagger` cli
 
 ```
 chmod 777 install-goswagger.sh
-make install-swagger
+make swagger-install
 ```
 --------------------------------------------------
 

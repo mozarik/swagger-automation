@@ -5,10 +5,8 @@ definitions:
   FooBarRequest:
     properties:
       bar:
-        items:
-          format: int64
-          type: integer
-        type: array
+        format: int64
+        type: integer
         x-go-name: Bar
       foo:
         type: string
@@ -18,17 +16,17 @@ definitions:
     x-go-package: github.com/pdrum/swagger-automation/api
   FooBarResponse:
     properties:
-      baz:
-        properties:
-          prop:
-            type: string
-            x-go-name: Prop
-        type: object
-        x-go-name: Baz
+      bar:
+        format: int64
+        type: integer
+        x-go-name: Bar
+      foo:
+        type: string
+        x-go-name: Foo
     title: FooBarResponse represents body of FooBar response.
     type: object
     x-go-package: github.com/pdrum/swagger-automation/api
-host: some-url.com
+host: localhost:1323
 info:
   description: Documentation of our awesome API.
   title: awesome.
